@@ -1,6 +1,7 @@
 //  Created by Beatrice Totanes on 18/03/2021.
 // The program expands a string or compresses a string depending on the user input and what action the user wants to perform.
 
+// HELLO WORLD
 #include <iostream>
 #include <cctype>
 #include <limits>
