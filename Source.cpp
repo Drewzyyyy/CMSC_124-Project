@@ -57,6 +57,7 @@ int main() {
 				else display error message
 				if (check_syntax(command, type)) DO STUFF HERE;
 				*/
+				if (!check_syntax(command, type)) cout << "ERROR" << endl;
 				break;
 			case 5:
 				// Assignment

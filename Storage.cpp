@@ -42,6 +42,7 @@ void Storage::PRINT(string command) {
 
 void Storage::ASSIGN(string command) {
 	string temp, expr, var;
+	bool isFloat = false;
 	// Perform expression evaluation similar to in syntax checking, break down expression part by part
 	for (int i = 0; i < command.length(); i++) {
 		if (isOperator(command[i])) {	// Current operator is an operator
@@ -52,7 +53,10 @@ void Storage::ASSIGN(string command) {
 					return;
 				}
 			}
-			else expr += temp + command[i];	// Add digit and operator to the string
+			else {
+				if (command[i] == '.') isFloat = true;
+				expr += temp + command[i];	// Add digit and operator to the string
+			}
 			temp.erase();
 		}
 		else if (command[i] == ' ') continue;	// Ignore spaces
