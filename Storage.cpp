@@ -78,7 +78,7 @@ void Storage::ASSIGN(string command) {
 	else expr += temp;
 	temp.erase();
 	command.erase();
-	cout << "EXPR = " << expr << endl; // For checking only removable
+	//cout << "EXPR = " << expr << endl; // For checking only removable
 	//cout << "Expression: " << expr << endl;
 	/* Insert code here for solution to the expr
 		Guides: Access to the expression only: expr
